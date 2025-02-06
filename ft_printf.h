@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isrgonza <isrgonza@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: glacroix <glacroix@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 11:04:04 by isrgonza          #+#    #+#             */
-/*   Updated: 2024/12/04 11:16:59 by isrgonza         ###   ########.fr       */
+/*   Created: 2022/12/12 16:26:57 by glacroix          #+#    #+#             */
+/*   Updated: 2022/12/14 16:21:10 by glacroix         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-int	ft_putchar(int c);
-int	ft_strlen(char *str);
-int	ft_putstr(char *str);
-int	ft_pointer(size_t n, char *base);
-int	ft_putnbr(int nbr);
-int	ft_putnbr_uns(unsigned int nbr);
-int	ft_putnbr_hex(unsigned int n, char *base);
-// int	ft_param(char format, va_list arg);
-int	ft_printf(const char *format, ...);
+int		ft_putchar(int c);
+int		ft_strlen(char *str);
+int		ft_putstr(char *str);
+int		ft_putnbr(int nbr);
+int		ft_putnbr_uns(unsigned int nbr);
+int		ft_param(char format, va_list arg);
+int		ft_printf(const char *format, ...);
+int		ft_putnbr_hex(unsigned int n, char *base);
+int		ft_pointer(size_t n, char *base);
 
 #endif

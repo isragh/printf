@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isrgonza <isrgonza@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: glacroix <glacroix@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 11:34:40 by isrgonza          #+#    #+#             */
-/*   Updated: 2024/12/04 13:15:14 by isrgonza         ###   ########.fr       */
+/*   Created: 2022/12/10 16:35:24 by glacroix          #+#    #+#             */
+/*   Updated: 2022/12/15 17:18:08 by glacroix         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,23 @@
 
 int	ft_pointer(size_t n, char *base)
 {
-	int	result;
+	size_t	nbr_final[16];
+	int		result;
+	int		i;
 
+	i = 0;
 	result = 0;
 	if (n == 0)
-		return (write(1, "0x0", 3));
-	result += write(1, "0x", 2);
-	if (n > 0)
+		result += write(1, "0x0", 3);
+	if (n != 0)
+		result += write(1, "0x", 2);
+	while (n)
 	{
-		if (n / 16)
-			result += ft_pointer(n / 16, base);
-		result += ft_putchar(base[n % 16]);
+		nbr_final[i] = n % 16;
+		n = n / 16;
+		i++;
 	}
+	while (--i >= 0)
+		result += ft_putchar(base[nbr_final[i]]);
 	return (result);
 }
