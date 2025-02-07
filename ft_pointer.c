@@ -6,7 +6,7 @@
 /*   By: glacroix <glacroix@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 16:35:24 by glacroix          #+#    #+#             */
-/*   Updated: 2022/12/15 17:18:08 by glacroix         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:28:01 by isrgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,14 @@ int	ft_pointer(size_t n, char *base)
 	i = 0;
 	result = 0;
 	if (n == 0)
-		result += write(1, "0x0", 3);
-	if (n != 0)
-		result += write(1, "0x", 2);
+		return (write(1, "(nil)", 5));
+	result += write(1, "0x", 2);
 	while (n)
 	{
-		nbr_final[i] = n % 16;
-		n = n / 16;
-		i++;
+		nbr_final[i++] = n % 16;
+		n /= 16;
 	}
-	while (--i >= 0)
+	while (i--)
 		result += ft_putchar(base[nbr_final[i]]);
 	return (result);
 }
