@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glacroix <glacroix@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: isrgonza <isrgonza@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/10 16:35:24 by glacroix          #+#    #+#             */
-/*   Updated: 2025/02/07 17:28:01 by isrgonza         ###   ########.fr       */
+/*   Created: 2025/02/20 11:59:29 by isrgonza          #+#    #+#             */
+/*   Updated: 2025/02/20 11:59:37 by isrgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

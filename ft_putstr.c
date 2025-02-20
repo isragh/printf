@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glacroix <glacroix@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: isrgonza <isrgonza@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/09 16:35:24 by glacroix          #+#    #+#             */
-/*   Updated: 2022/12/15 17:18:38 by glacroix         ###   ########.fr       */
+/*   Created: 2025/02/20 12:02:38 by isrgonza          #+#    #+#             */
+/*   Updated: 2025/02/20 12:02:39 by isrgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
